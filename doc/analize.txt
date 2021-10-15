@@ -1,0 +1,20 @@
+
+Home (https://smartdata.tonytemplates.com/car-repair-service-v4/car1/) 
+- Landing (resumão) 
+
+Serviços (pensar na página)
+- Mecânica em Geral
+- Retífica de motores
+- Auto Center
+- Auto Peças
+
+Sobre (https://smartdata.tonytemplates.com/car-repair-service-v4/car1/about-us/)
+- Textos institucionais
+
+Preços e Cupons (https://smartdata.tonytemplates.com/car-repair-service-v4/car1/pricing-coupons/)
+- Formulário 
+- Cupons para uso dos clientes
+
+Contato (https://smartdata.tonytemplates.com/car-repair-service-v4/car1/contacts/)
+- Formulário
+- Endereço
