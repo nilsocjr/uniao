@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://retificauniao.com.br/sitemap.xml
