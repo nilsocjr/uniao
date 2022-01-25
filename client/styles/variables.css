@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #f2be54;
+    --secondary-color: #1b4462;
+    --text-color: #3a3a3a;
+
+    /* media queries */
+    --xs: 320px;
+    --sm: 640px;
+    --md: 768px;
+    --lg: 1024px;
+}

@@ -18,3 +18,8 @@ Preços e Cupons (https://smartdata.tonytemplates.com/car-repair-service-v4/car1
 Contato (https://smartdata.tonytemplates.com/car-repair-service-v4/car1/contacts/)
 - Formulário
 - Endereço
+
+
+
+icone
+<a href="https://www.flaticon.com/free-icons/tires" title="tires icons">Tires icons created by ultimatearm - Flaticon</a>

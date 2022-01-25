@@ -1,24 +1,42 @@
 import Link from 'next/link'
+import nav from './nav.module.css'
 
-type Props = {}
+type Props = {
+    open: boolean
+}
 
-function Nav({}: Props) {
-  return (
-    <nav>
-      <ul>
-        <li>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/about">
-            <a>About Us</a>
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  )
+function Nav({ open }: Props) {
+    return (
+        <nav className={nav.main}>
+            <ul className={`${open ? nav.showMenu : ''} container`}>
+                <li>
+                    <Link href="/quem-somos">
+                        <a>QUEM SOMOS</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/servicos-e-pecas">
+                        <a>SERVIÇOS & PEÇAS</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/promocoes-e-cupons">
+                        <a>PROMOÇÕES & CUPONS</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/contato">
+                        <a>CONTATO</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/agendar-visita">
+                        <a>AGENDAR VISITA</a>
+                    </Link>
+                </li>
+            </ul>
+        </nav>
+    )
 }
 
 export default Nav

@@ -1,16 +1,24 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.banner {
+    background-image: url('../public/images/bg-home.jpg');
+    width: 100%;
+    min-height: 100%;
+    height: 100vh;
 }
