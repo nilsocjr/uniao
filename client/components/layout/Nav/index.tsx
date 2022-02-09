@@ -8,7 +8,11 @@ type Props = {
 function Nav({ open }: Props) {
     return (
         <nav className={nav.main}>
-            <ul className={`${open ? nav.showMenu : ''} container`}>
+            <ul
+                className={`${
+                    open ? nav.showMenu : ''
+                } container md:flex justify-between items-center`}
+            >
                 <li>
                     <Link href="/quem-somos">
                         <a>QUEM SOMOS</a>
