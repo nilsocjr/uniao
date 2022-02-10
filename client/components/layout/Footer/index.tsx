@@ -1,12 +1,14 @@
 import footer from './footer.module.css'
-import { Wrapper } from '@googlemaps/react-wrapper'
+import GoogleMaps from '../../GoogleMaps'
+
 type Props = {}
 function Footer({}: Props) {
     return (
         <footer className="bg-gray-900">
-            <Wrapper apiKey={'AIzaSyB6ruwZMg-TYGCSTLkgTFau-iIoWCrqZls'}>
-                <div id="map" className={footer.map} />
-            </Wrapper>
+            <div id="map" className={footer.map}>
+                <GoogleMaps />
+            </div>
+
             <div className="container">
                 <div className={footer.info}>
                     <div className="box-info">
@@ -28,12 +30,13 @@ function Footer({}: Props) {
                                 </svg>
 
                                 <span>
-                                    +55 42 3333 9999 <br />
-                                    +55 42 999 999 999
+                                    Av. XV de Novembro, 1233, Centro
+                                    <br />
+                                    Guarapuava-PR - 80100-000
                                 </span>
                             </li>
 
-                            <li className="flex justify-between items-start">
+                            <li className="flex justify-start items-start">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     height="18px"

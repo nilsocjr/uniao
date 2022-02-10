@@ -11,6 +11,7 @@ const Home: NextPage = () => {
             </Head>
 
             <div className="banner"></div>
+            <div className="p-10 "></div>
         </div>
     )
 }

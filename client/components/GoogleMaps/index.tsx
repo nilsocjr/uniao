@@ -1,21 +1,45 @@
 import React from 'react'
+import googlemaps from './googlemaps.module.css'
+import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api'
 
-type Props = {
-    center: google.maps.LatLngLiteral
-    zoom: number
+export interface MapPageProps {}
+export const REACT_APP_GOOGLE_API_KEY = 'AIzaSyB6ruwZMg-TYGCSTLkgTFau-iIoWCrqZls'
+
+const MapPage = () => {
+    const [map, setMap] = React.useState<google.maps.Map>()
+
+    const position = {
+        lat: -25.38234,
+        lng: -51.45399,
+    }
+
+    const onMapLoad = (map: google.maps.Map) => {
+        setMap(map)
+    }
+
+    return (
+        <div className="map">
+            <LoadScript googleMapsApiKey={REACT_APP_GOOGLE_API_KEY} libraries={['places']}>
+                <GoogleMap
+                    onLoad={onMapLoad}
+                    mapContainerStyle={{ width: '100%', height: '440px' }}
+                    center={position}
+                    zoom={15}
+                >
+                    <Marker
+                        position={position}
+                        options={{
+                            label: {
+                                color: 'red',
+                                text: 'União - Retífica e Mecânica',
+                                className: `${googlemaps.marker}`,
+                            },
+                        }}
+                    />
+                </GoogleMap>
+            </LoadScript>
+        </div>
+    )
 }
 
-const MyMapComponent = ({ center, zoom }: Props) => {
-    const ref = React.useRef()
-
-    React.useEffect(() => {
-        new window.google.maps.Map(ref.current, {
-            center,
-            zoom,
-        })
-    })
-
-    return <div ref={ref} id="map" />
-}
-
-export default MyMapComponent
+export default MapPage
