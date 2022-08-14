@@ -1,4 +1,4 @@
-module.exports = {
+const sitemapGenetatorConfig = {
   siteUrl: "https://retificauniao.com.br",
   generateRobotsTxt: true,
   exclude: ["/pt-br*", "/disallowed"],
@@ -21,3 +21,5 @@ module.exports = {
     ],
   },
 };
+
+module.exports = sitemapGenetatorConfig;

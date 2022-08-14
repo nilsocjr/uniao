@@ -2,16 +2,17 @@ import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
 
 export default function Header(): JSX.Element {
-  const title = "Retífica União";
+  const title = "União - Retífica, Mecânica e Auto Center";
   const desc =
-    "Retífica de motores, mecânica em geral, balanceamento e revisão com melhor preço, para sua viagem ser mais segura.";
-  const ogImgRelativePath = "/og.png";
+    "União - Retífica, Mecânica e Auto Center, serviços completos para seu carro em Guarapuava.";
+  const ogImgRelativePath = "/og.png"; // 1200x6000
 
   const siteURL = "https://retificauniao.com.br";
   const ogImageURL = `${siteURL}${ogImgRelativePath}`;
   const pathName = useRouter().pathname;
   const pageURL = pathName === "/" ? siteURL : siteURL + pathName;
-  const siteName = "Retifica Uniao";
+  const twitterHandle = "@retificauniao";
+  const siteName = "União - Retífica, Mecânica e Auto Center";
 
   return (
     <NextSeo
@@ -20,7 +21,7 @@ export default function Header(): JSX.Element {
       canonical={pageURL}
       openGraph={{
         type: "website",
-        locale: "pt-BR",
+        locale: "pt_BR",
         url: pageURL,
         title,
         description: desc,
@@ -29,10 +30,15 @@ export default function Header(): JSX.Element {
             url: ogImageURL,
             width: 1200,
             height: 630,
-            alt: "Gourav.io - personal site and blog",
+            alt: "União - Retífica, Mecânica e Auto Center",
           },
         ],
         site_name: siteName,
+      }}
+      twitter={{
+        handle: twitterHandle,
+        site: twitterHandle,
+        cardType: "summary_large_image",
       }}
       additionalMetaTags={[
         {

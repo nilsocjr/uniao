@@ -9,7 +9,7 @@ coverage
 *.lock
 *.css
 *.scss
+*.mjs
 **/out/*
 next-env.d.ts
-*.mjs
 # next.config.js

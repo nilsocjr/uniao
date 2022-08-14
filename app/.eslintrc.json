@@ -6,10 +6,15 @@
     "node": true
   },
   "settings": {
+    // to support @/ path
+    "import/resolver": {
+      "typescript": {} // this loads <rootdir>/tsconfig.json to eslint
+    },
     "react": {
       "version": "detect"
     }
   },
+
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json", // tells parser relative path of tsconfig.json
@@ -38,6 +43,6 @@
   ],
   "rules": {
     // ...add rules which you'd like to disable
-    "jsx-a11y/anchor-is-valid": "off" // disable this rule
+    "jsx-a11y/anchor-is-valid": "off"
   }
 }
