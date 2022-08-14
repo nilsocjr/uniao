@@ -1,12 +1,12 @@
 import footer from './footer.module.css'
-import GoogleMaps from '../../GoogleMaps'
+// import GoogleMaps from '../../GoogleMaps'
 
 type Props = {}
 function Footer({}: Props) {
     return (
-        <footer className="bg-gray-900">
+        <footer className={footer.main}>
             <div id="map" className={footer.map}>
-                <GoogleMaps />
+                {/* <GoogleMaps /> */}GOOGLE
             </div>
 
             <div className="container">
@@ -101,7 +101,7 @@ function Footer({}: Props) {
             </div>
 
             <div className="container">
-                <div className="flex justify-between text-white p-2">
+                <div className="flex justify-between items-center text-white p-2">
                     <p>&copy; {new Date().getFullYear()} - União Retífica e Mecânica</p>
 
                     <ul>
