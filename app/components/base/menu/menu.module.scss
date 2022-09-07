@@ -1,0 +1,12 @@
+.list {
+	li {
+		a {
+			font-weight: 500;
+			transition: all ease 0.4s;
+
+			&:hover {
+				color: #f2be54;
+			}
+		}
+	}
+}

@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap --config sitemap-generator.js"
+    "sitemap": "next-sitemap --config next-sitemap.config.js"
   },
   "dependencies": {
     "next": "12.2.5",
@@ -27,7 +27,6 @@
     "eslint": "8.22.0",
     "eslint-config-next": "12.2.5",
     "eslint-config-prettier": "^8.5.0",
-    "globby": "^13.1.2",
     "next-sitemap": "^3.1.17",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8",

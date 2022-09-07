@@ -1,7 +1,7 @@
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
 
-export default function Header(): JSX.Element {
+export default function SEO() {
   const title = "União - Retífica, Mecânica e Auto Center";
   const desc =
     "União - Retífica, Mecânica e Auto Center, serviços completos para seu carro em Guarapuava.";
