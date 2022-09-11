@@ -88,13 +88,6 @@ export default function Header(): JSX.Element {
 					<Menu />
 				</div>
 			</div>
-
-			<div className="container mt-32 mx-10">
-				<h1 className={`${header.title} text-primary`}>União</h1>
-				<h2 className={header.subtitle}>
-					Retífica, Mecânica, Auto Center & Peças
-				</h2>
-			</div>
 		</header>
 	);
 }

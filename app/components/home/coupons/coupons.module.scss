@@ -1,0 +1,42 @@
+.bg {
+	position: relative;
+	width: 75%;
+	background-image: url("../../../public/images/bg-coupons.jpg");
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-attachment: fixed;
+}
+
+.content {
+	width: 300px;
+	height: auto;
+	position: absolute;
+	top: 50px;
+	right: -50px;
+	text-align: center;
+}
+
+.descount {
+	border-bottom: 5px dashed #fff;
+	padding: 36px 0;
+	background-color: #f2be54;
+	span {
+		color: red;
+	}
+}
+
+.coupon {
+	border-top: 5px dashed #fff;
+	padding: 36px 0;
+	background-color: #3a3a3a;
+
+	span {
+		background: #fff;
+		color: #3a3a3a;
+		padding: 16px;
+		margin: 0 16px;
+		display: block;
+		font-weight: bold;
+		font-size: 36px;
+	}
+}

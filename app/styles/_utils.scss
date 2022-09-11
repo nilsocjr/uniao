@@ -1,0 +1,40 @@
+.title-separator {
+	width: 46px;
+	height: 3px;
+	background-color: #f2be54;
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+	top: 4px;
+
+	&:before,
+	&:after {
+		content: "";
+		width: 3px;
+		height: 3px;
+		background-color: #f2be54;
+		display: inline-block;
+		position: absolute;
+	}
+
+	&:before {
+		right: -5px;
+	}
+
+	&:after {
+		right: -10px;
+	}
+}
+
+.marker-list {
+	position: relative;
+	margin-left: 24px;
+
+	&:after {
+		position: absolute;
+		top: 0;
+		left: -24px;
+		content: "\2713";
+		color: #f2be54;
+	}
+}
