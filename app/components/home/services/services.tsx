@@ -1,11 +1,11 @@
 import services from "./services.module.scss";
 
-export default function Services() {
+export default function Services(): JSX.Element {
 	return (
 		<section className={`my-12 py-10 ${services.bg}`}>
 			<div className="container py-10">
-				<div className="grid md:grid-cols-3 gap-3">
-					<div className="relative">
+				<div className="grid md:grid-cols-3 md:gap-3">
+					<div className="relative mb-10 md:mb-0">
 						<h2 className="font-semibold text-4xl text-white">
 							Confira nossos servicos que
 							<span className="text-primary"> oferecemos</span>
@@ -25,7 +25,7 @@ export default function Services() {
 							Reserve um horario
 						</button>
 					</div>
-					<div className="px-10">
+					<div className="md:px-10">
 						<ul className="text-white text-base leading-9">
 							<li className="marker-list">
 								Lorem ipsum dolor sit amet-1
@@ -65,7 +65,7 @@ export default function Services() {
 							</li>
 						</ul>
 					</div>
-					<div className="px-10">
+					<div className="md:px-10">
 						<ul className="text-white text-base leading-9">
 							<li className="marker-list">
 								Lorem ipsum dolor sit amet-1

@@ -7,20 +7,20 @@ export default function Header(): JSX.Element {
 	return (
 		<header className={header.header}>
 			<div className={header.top}>
-				<div className="container mx-auto">
-					<div className="flex justify-between items-center">
+				<div className="container pt-2 mx-auto">
+					<div className="text-center md:text-start md:flex md:justify-between md:items-center">
 						<Link href="/">
 							<Image
 								src="/images/logo.png"
 								alt="União - Retífica, Mecânica e Auto Center"
 								width={100}
 								height={70}
-								className="cursor-pointer"
+								className="cursor-pointer m-auto w-full"
 								layout="intrinsic"
 							/>
 						</Link>
 
-						<ul className="list-none">
+						<ul className="list-none hidden md:block">
 							<li className="inline-block p-6">
 								<div className="flex flex-row items-center">
 									<svg

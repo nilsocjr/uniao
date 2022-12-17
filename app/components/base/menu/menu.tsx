@@ -1,24 +1,64 @@
+import { useState } from "react";
 import Link from "next/link";
 import menu from "./menu.module.scss";
 
 export default function Menu(): JSX.Element {
+	const [open, setOpen] = useState<boolean>(false);
+
 	return (
-		<nav className="border-t border-t-primary my-3 py-3">
-			<ul className={`flex justify-between items-center ${menu.list}`}>
+		<nav
+			className={`border-t border-t-primary my-3 py-3 ${
+				open ? menu.containerMobileOpen : menu.containerMobileClose
+			}`}
+		>
+			<div
+				onClick={() => setOpen(!open)}
+				className="flex items-center justify-between md:hidden"
+			>
+				MENU
+				<div className={menu.mobile}>
+					{open ? (
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 512 512"
+							aria-label="Fechar menu versão mobile"
+						>
+							<path d="M175 175C184.4 165.7 199.6 165.7 208.1 175L255.1 222.1L303 175C312.4 165.7 327.6 165.7 336.1 175C346.3 184.4 346.3 199.6 336.1 208.1L289.9 255.1L336.1 303C346.3 312.4 346.3 327.6 336.1 336.1C327.6 346.3 312.4 346.3 303 336.1L255.1 289.9L208.1 336.1C199.6 346.3 184.4 346.3 175 336.1C165.7 327.6 165.7 312.4 175 303L222.1 255.1L175 208.1C165.7 199.6 165.7 184.4 175 175V175zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z" />
+						</svg>
+					) : (
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							aria-label="Abrir menu versão mobile"
+						>
+							<path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+						</svg>
+					)}
+				</div>
+			</div>
+			<ul
+				className={`${
+					open ? "block" : "hidden"
+				} md:flex justify-between items-center ${menu.list}`}
+			>
 				<li>
-					<Link href="/">QUEM SOMOS</Link>
+					<Link href="/quem-somos">QUEM SOMOS</Link>
 				</li>
 				<li>
-					<Link href="/">SERVICOS & PECAS</Link>
+					<Link href="/servicos-e-pecas">SERVIÇOS & PEÇAS</Link>
 				</li>
 				<li>
-					<Link href="/">PROMOCOES E CUPONS</Link>
+					<Link href="/promocoes-e-cupons">PROMOÇÕES & CUPONS</Link>
 				</li>
 				<li>
-					<Link href="/">CONTATO</Link>
+					<Link href="/contato">CONTATO</Link>
 				</li>
 				<li>
-					<Link href="/">AGENDAR VISITA</Link>
+					<Link href="https://wa.me/5542999999999?text=Gostaria%20de%20agendar%20uma%20visita%20">
+						<a target="_blank" rel="noopener noreferrer">
+							AGENDAR VISITA
+						</a>
+					</Link>
 				</li>
 			</ul>
 		</nav>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function WhatsWeDo() {
+export default function WhatsWeDo(): JSX.Element {
 	return (
 		<section className="container py-10">
 			<div className="relative table mx-auto text-center my-12">

@@ -5,8 +5,28 @@
 	height: 100vh;
 	min-height: 100%;
 	color: white;
+
+	@media screen and (max-width: 586px) {
+		background-image: url("../../../public/images/bg-coupons.jpg");
+	}
+}
+.headerPage {
+	background-image: url("../../../public/images/bg-home.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	min-height: 100%;
+	color: white;
+
+	@media screen and (max-width: 586px) {
+		background-image: url("../../../public/images/bg-coupons.jpg");
+	}
 }
 
 .top {
 	background-color: rgba(#1b4462, 0.7);
+
+	@media screen and (max-width: 586px) {
+		background-color: rgba(#1b4462, 0.9);
+	}
 }

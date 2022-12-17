@@ -1,6 +1,6 @@
 import coupons from "./coupons.module.scss";
 
-export default function Coupons() {
+export default function Coupons(): JSX.Element {
 	return (
 		<section className="my-12 py-10">
 			<div className="container py-10">
@@ -24,7 +24,7 @@ export default function Coupons() {
 						</div>
 					</div>
 
-					<div className="text-default">
+					<div className="text-default pt-10 md:pt-0">
 						<h2 className="font-semibold text-4xl">
 							Qualidade no Atendimento e
 							<span className="text-primary"> Satisfação </span>do

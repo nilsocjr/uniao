@@ -1,4 +1,4 @@
-export default function Schedule() {
+export default function Schedule(): JSX.Element {
 	return (
 		<section className="container pb-10 text-center">
 			<div className="relative table mx-auto text-center mt-12">

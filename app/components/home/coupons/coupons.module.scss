@@ -5,6 +5,11 @@
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-attachment: fixed;
+
+	@media screen and (max-width: 586px) {
+		background-image: none;
+		width: 100%;
+	}
 }
 
 .content {
@@ -14,6 +19,15 @@
 	top: 50px;
 	right: -50px;
 	text-align: center;
+
+	@media screen and (max-width: 586px) {
+		width: 100%;
+		height: auto;
+		position: relative;
+		top: 0;
+		right: 0;
+		text-align: center;
+	}
 }
 
 .descount {
