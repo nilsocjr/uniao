@@ -30,7 +30,7 @@ export default function WhatsWeDo(): JSX.Element {
 
 				<div className="hidden md:contents">
 					<Image
-						alt="Mountains"
+						alt="Preventative Maintance 1"
 						src="/images/1-whatswedo.jpg"
 						layout="responsive"
 						width={390}
@@ -54,7 +54,7 @@ export default function WhatsWeDo(): JSX.Element {
 
 				<div className="hidden md:contents">
 					<Image
-						alt="Mountains"
+						alt="Preventative Maintance 2"
 						src="/images/2-whatswedo.jpg"
 						layout="responsive"
 						width={390}
@@ -78,7 +78,7 @@ export default function WhatsWeDo(): JSX.Element {
 
 				<div className="hidden md:contents">
 					<Image
-						alt="Mountains"
+						alt="Preventative Maintance 3"
 						src="/images/3-whatswedo.jpg"
 						layout="responsive"
 						width={390}
